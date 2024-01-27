@@ -1,0 +1,10 @@
+//Not the best solution (https://www.codewars.com/kata/53af2b8861023f1d88000832/java)
+public class Banjo {
+  public static String areYouPlayingBanjo(String name) {
+    String ichiname = name.substring(0,1);
+    String nichiname = ichiname.toLowerCase();
+    boolean trut = (nichiname.equals("r"));
+    String result = (trut) ? name + " plays banjo" : name + " does not play banjo";
+    return result;
+  }
+}
